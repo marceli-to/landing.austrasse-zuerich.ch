@@ -1,0 +1,14 @@
+Add admin user:
+
+1) php artisan tinker
+2) DB::table('users')->insert(['name'=>'marcel','email'=>'m@marceli.to','password'=>Hash::make('7aq31rr')])
+3) DB::table('users')->insert(['name'=>'dennis','email'=>'dennis@stoz.ch','password'=>Hash::make('vmr6wdD&IGnE-+&G%gdr')])
+4) DB::table('users')->insert(['name'=>'dennis','email'=>'chantal.bieri@apleona.com','password'=>Hash::make('hhIsXmul_fwELcc3cT5N')])
+
+php composer.phar install --optimize-autoloader --no-dev
+
+
+ssh:
+
+ssh billrothminerva@austrasse-zuerich.ch -p2121
+9ijgW89_3&R4lz2y

@@ -1,0 +1,27 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/alerts/success
+ * -----------------------------------------------------------------------------
+ */
+
+.alert {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: auto;
+
+  > div {
+    background-color: $color-light-green;
+    color: $color-white;
+    @include font-rubik-bold();
+    @include font-size($fs-sm);
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.alert-success {
+  color: $color--dark-blue;
+  @include font-chromo-semi();
+  @include responsive-prop('margin-bottom', $space-md);
+}
