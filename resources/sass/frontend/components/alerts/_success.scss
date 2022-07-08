@@ -11,7 +11,7 @@
   width: auto;
 
   > div {
-    background-color: $color-light-green;
+    background-color: $color-primary;
     color: $color-white;
     @include font-rubik-bold();
     @include font-size($fs-sm);

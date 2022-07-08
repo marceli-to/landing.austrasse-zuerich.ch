@@ -12,3 +12,6 @@ ssh:
 
 ssh billrothminerva@austrasse-zuerich.ch -p2121
 9ijgW89_3&R4lz2y
+
+ssh austrasse-zueric@austrasse-zuerich.ch -p 2121
+Quai7&599
