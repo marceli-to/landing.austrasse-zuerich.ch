@@ -19,9 +19,3 @@
     text-align: center;
   }
 }
-
-.alert-success {
-  color: $color--dark-blue;
-  @include font-chromo-semi();
-  @include responsive-prop('margin-bottom', $space-md);
-}
