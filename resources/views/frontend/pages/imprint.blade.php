@@ -9,7 +9,7 @@
       <h2>Design und Entwicklung</h2>
       <p>Stoz Werbeagentur AG<br>Dennis Stoz<br>Barzloostrasse 2<br>8330 Pfäffikon ZH<br>T + 41 44 950 35 50<br><a href="mailto:hello@stoz.ch">hello@stoz.ch</a><br><a href="https://www.stoz.ch" target="_blank" rel="noopener">www.stoz.ch</a></p>
       <h2>Programmierung</h2>
-      <p>marceli.to<br>Marcel Stadelmann<br>Schulstrasse 12<br>8400 Winterthur<br><a href="https://marceli.to" target="_blank" rel="noopener">marceli.to</a></p>
+      <p>marceli.to<br>Marcel Stadelmann<br>Letzigraben 149<br>8047 Zürich<br><a href="https://marceli.to" target="_blank" rel="noopener">marceli.to</a></p>
     </article>
   </div>
 </section>
