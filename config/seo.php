@@ -11,7 +11,7 @@ return [
   |
   */
 
-  'title' => 'Wohnen im Kreis 3 - Billroth Minerva',
+  'title' => 'Wohnen im Kreis 3 - Austrasse Zürich',
 
   /*
   |--------------------------------------------------------------------------

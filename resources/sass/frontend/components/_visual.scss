@@ -8,9 +8,37 @@
 figure.visual {
   display: block;
   height: auto;
+  max-height: 90vh;
   width: 100%;
 
   img {
-    @extend %is-responsive;
+    @extend %is-contain;
   }
 }
+
+@include bp-xxs() {
+  figure.visual-bg {
+    @include background-default();
+    background-image: url('/assets/media/visual-austrasse.jpg');
+    background-repeat: no-repeat;
+    position: relative; 
+    padding-bottom: 62.5%;
+    height: 0; 
+    overflow: hidden; 
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include bp-xs() {
+  figure.visual-bg {
+    @include background-default();
+    background-image: url('/assets/media/visual-austrasse.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    width: 100%;
+  }
+}
+

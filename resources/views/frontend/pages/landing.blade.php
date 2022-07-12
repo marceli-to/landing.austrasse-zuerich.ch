@@ -6,20 +6,20 @@
 </div>
 @endif
 
-<figure class="visual">
-  <picture>
-    {{-- <source media="(min-width: 1600px)" srcset="/assets/media/visual-billroth-minerva-xl.webp" type="image/webp">
+<figure class="visual-bg">
+  {{-- <picture>
+    <source media="(min-width: 1600px)" srcset="/assets/media/visual-billroth-minerva-xl.webp" type="image/webp">
     <source media="(min-width: 1600px)" srcset="/assets/media/visual-billroth-minerva-xl.jpg">
     <source media="(min-width: 1200px)" srcset="/assets/media/visual-billroth-minerva-lg.webp" type="image/webp">
     <source media="(min-width: 1200px)" srcset="/assets/media/visual-billroth-minerva-lg.jpg">
     <source media="(min-width: 900px)" srcset="/assets/media/visual-billroth-minerva-md.webp" type="image/webp">
-    <source media="(min-width: 900px)" srcset="/assets/media/visual-billroth-minerva-md.jpg"> --}}
+    <source media="(min-width: 900px)" srcset="/assets/media/visual-billroth-minerva-md.jpg">
     <img src="/assets/media/visual-austrasse.jpg" 
       alt="Wohnen im Kreis 3 | Austrasse Zürich" 
       title="Wohnen im Kreis 3 | Austrasse Zürich" 
       height="900" 
       width="375">
-  </picture>
+  </picture> --}}
 </figure>
 <section class="page-section is-dark">
   <div class="page-inner">

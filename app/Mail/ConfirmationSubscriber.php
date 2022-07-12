@@ -31,7 +31,7 @@ class ConfirmationSubscriber extends Mailable
     public function build()
     {
         return $this->from(['address' => 'no-reply@austrasse-zuerich.ch', 'name' => 'Apleona Real Estate'])
-                    ->subject('Ihre Anfrage Billroth Minerva')
+                    ->subject('Ihre Anfrage Austrasse Zürich')
                     ->markdown('mails.confirmation-subscriber');
     }
 }

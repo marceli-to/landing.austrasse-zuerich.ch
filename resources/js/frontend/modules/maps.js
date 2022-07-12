@@ -17,7 +17,7 @@ var geojson = {
       coordinates: [8.518925326777016,47.364031287388606],
     },
     properties: {
-      title: 'Billroth Minerva',
+      title: 'Austrasse Zürich',
       description: 'Zürich'
     }
   }]
