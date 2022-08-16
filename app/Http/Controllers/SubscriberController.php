@@ -27,8 +27,9 @@ class SubscriberController extends Controller
     $validatedData = $request->validate([
       'firstname' => 'required',
       'name'      => 'required',
-      'phone'     => 'required',
+      'phone'      => 'required',
       'email'     => 'required|email',
+      //'interest'  => 'required|min:1'
     ]);
 
     // store the data
@@ -37,6 +38,7 @@ class SubscriberController extends Controller
     $subscriber->name       = $request->name;
     $subscriber->email      = $request->email;
     $subscriber->phone      = $request->phone;
+    $subscriber->interest   = $request->interest ? implode(', ' , $request->interest) : NULL;
     $subscriber->save();
 
     // mail data
@@ -59,7 +61,7 @@ class SubscriberController extends Controller
     // Mail::to(env('MAIL_RECIPIENT'))->send(new ConfirmationOwner(json_encode($mail_data)));
 
     // send mail to client
-    // Mail::to($subscriber->email)->send(new ConfirmationSubscriber($subscriber));
+    Mail::to($subscriber->email)->send(new ConfirmationSubscriber($subscriber));
 
     // redirect status
     return redirect()->route('page_landing', ['state' => 'sent']);

@@ -1,9 +1,7 @@
 @component('mail::message')
 # Ihre Anfrage
 
-Vielen Dank für Ihr Interesse an einer Wohnung in der Liegenschaft Wohnen im Kreis 7 - Austrasse Zürich.
-
-Wir werden Ihre Anfrage so schnell als möglich bearbeiten.
+Besten Dank für Ihr Interesse, wir haben die Informationen erhalten. Gerne werden wir Sie kontaktieren sobald die Vermarktung startet.
 
 Freundliche Grüsse<br>
 

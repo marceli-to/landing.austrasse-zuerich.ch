@@ -7,25 +7,13 @@
 @endif
 
 <figure class="visual-bg">
-  {{-- <picture>
-    <source media="(min-width: 1600px)" srcset="/assets/media/visual-billroth-minerva-xl.webp" type="image/webp">
-    <source media="(min-width: 1600px)" srcset="/assets/media/visual-billroth-minerva-xl.jpg">
-    <source media="(min-width: 1200px)" srcset="/assets/media/visual-billroth-minerva-lg.webp" type="image/webp">
-    <source media="(min-width: 1200px)" srcset="/assets/media/visual-billroth-minerva-lg.jpg">
-    <source media="(min-width: 900px)" srcset="/assets/media/visual-billroth-minerva-md.webp" type="image/webp">
-    <source media="(min-width: 900px)" srcset="/assets/media/visual-billroth-minerva-md.jpg">
-    <img src="/assets/media/visual-austrasse.jpg" 
-      alt="Wohnen im Kreis 3 | Austrasse Zürich" 
-      title="Wohnen im Kreis 3 | Austrasse Zürich" 
-      height="900" 
-      width="375">
-  </picture> --}}
+
 </figure>
 <section class="page-section is-dark">
   <div class="page-inner">
     <article>
       <h1>Wohnen im Kreis 3</h1>
-      <p><strong>Erstvermietung</strong><br>An der Austrasse 46–56 und Wiedingstrasse 87a-d entstehen per Sommer 2024 neue, moderne und energetisch nachhaltige 1- bis 5.5-Zimmer-Wohnungen sowie wenige Gewerbeflächen.</p>
+      <p><strong>Erstvermietung</strong><br>An der Austrasse 46–56 und Wiedingstrasse 87a-d entstehen per Sommer 2024 neue, moderne und energetisch nachhaltige 1/1.5- bis 5.5-Zimmerwohnungen sowie wenige Gewerbeflächen.</p>
       <p>Gerne senden wir Ihnen weitere Informationen, sobald die Vermietung startet. Bitte füllen Sie bei Interesse das Kontaktformular aus.</p>
     </article>
   </div>
@@ -34,8 +22,53 @@
   <div class="page-inner">
     <article>
       <h1>Kontaktformular</h1>
+      <p>Ich möchte gerne weitere Informationen erhalten, sobald die Vermietung startet.</p>
       <form method="POST" action="{{ route('page_landing_subscribe') }}" class="contact-form js-validate">
         @csrf
+
+        @if ($errors->has('interest'))
+          <div class="error-message">{{ $errors->first('interest') }}</div>
+        @else
+          <div class="error-message" style="display:none">Bitte mind. 1 Option auswählen</div>
+        @endif
+        <div class="form-controls__grid">
+          <div class="span">
+            <div class="form-control">
+              <input type="checkbox" name="interest[]" value="1./1.5 Zi" id="interest-1.5">
+              <label for="interest-1.5">1./1.5-Zimmerwohnung</label>
+            </div>
+          </div>
+          <div class="span">
+            <div class="form-control">
+              <input type="checkbox" name="interest[]" value="2.5 Zi" id="interest-2.5">
+              <label for="interest-2.5">2.5-Zimmerwohnung</label>
+            </div>
+          </div>
+          <div class="span">
+            <div class="form-control">
+              <input type="checkbox" name="interest[]" value="3.5 Zi" id="interest-3.5">
+              <label for="interest-3.5">3.5-Zimmerwohnung</label>
+            </div>
+          </div>
+          <div class="span">
+            <div class="form-control">
+              <input type="checkbox" name="interest[]" value="4.5 Zi" id="interest-4.5">
+              <label for="interest-4.5">4.5-Zimmerwohnung</label>
+            </div>
+          </div>
+          <div class="span">
+            <div class="form-control">
+              <input type="checkbox" name="interest[]" value="5.5 Zi" id="interest-5.5">
+              <label for="interest-5.5">5.5-Zimmerwohnung</label>
+            </div>
+          </div>
+          <div class="span">
+            <div class="form-control">
+              <input type="checkbox" name="interest[]" value="Gewerbe" id="interest-gewerbe">
+              <label for="interest-gewerbe">Gewerbe</label>
+            </div>
+          </div>
+        </div>
         <div class="grid-2x1">
           <div class="span">
             @if ($errors->has('firstname'))
