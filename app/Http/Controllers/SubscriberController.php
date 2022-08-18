@@ -61,7 +61,12 @@ class SubscriberController extends Controller
     // Mail::to(env('MAIL_RECIPIENT'))->send(new ConfirmationOwner(json_encode($mail_data)));
 
     // send mail to client
-    Mail::to($subscriber->email)->send(new ConfirmationSubscriber($subscriber));
+    try {
+      Mail::to($subscriber->email)->send(new ConfirmationSubscriber($subscriber));
+    }
+    catch(\Throwable $e) {
+      \Log::error($e);
+    }
 
     // redirect status
     return redirect()->route('page_landing', ['state' => 'sent']);
