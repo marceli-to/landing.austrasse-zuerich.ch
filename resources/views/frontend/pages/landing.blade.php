@@ -34,8 +34,8 @@
         <div class="form-controls__grid">
           <div class="span">
             <div class="form-control">
-              <input type="checkbox" name="interest[]" value="1./1.5 Zi" id="interest-1.5">
-              <label for="interest-1.5">1./1.5-Zimmerwohnung</label>
+              <input type="checkbox" name="interest[]" value="1.5 Zi" id="interest-1.5">
+              <label for="interest-1.5">1.5-Zimmerwohnung</label>
             </div>
           </div>
           <div class="span">
