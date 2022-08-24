@@ -13,7 +13,7 @@
   <div class="page-inner">
     <article>
       <h1>Wohnen im Kreis 3</h1>
-      <p><strong>Erstvermietung</strong><br>An der Austrasse 46–56 und Wiedingstrasse 87a-d entstehen per Sommer 2024 neue, moderne und energetisch nachhaltige 1/1.5- bis 5.5-Zimmerwohnungen sowie wenige Gewerbeflächen.</p>
+      <p><strong>Erstvermietung</strong><br>An der Austrasse 46–56 und Wiedingstrasse 87a-d entstehen per Sommer 2024 neue, moderne und energetisch nachhaltige 1.5- bis 5.5-Zimmerwohnungen sowie wenige Gewerbeflächen.</p>
       <p>Gerne senden wir Ihnen weitere Informationen, sobald die Vermietung startet. Bitte füllen Sie bei Interesse das Kontaktformular aus.</p>
     </article>
   </div>
